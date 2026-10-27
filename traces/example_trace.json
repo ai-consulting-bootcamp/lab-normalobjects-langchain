@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-27T20:19:21.744841+00:00",
+  "status": "completed",
+  "query": "My lights keep flickering and I think there is a portal in my basement.",
+  "model": "gpt-4o-mini",
+  "tool_calls": [
+    {
+      "id": "call_1UiKx8erJetMRDrDeZE3gBTz",
+      "name": "check_hawkins_records",
+      "arguments": {
+        "query": "portal in basement"
+      },
+      "results": [
+        {
+          "tool_call_id": "call_1UiKx8erJetMRDrDeZE3gBTz",
+          "name": "check_hawkins_records",
+          "content": "[FICTIONAL RECORD HK-001 | portal] Suspected portals must be reported to the Hawkins containment desk. Do not enter.",
+          "status": "success"
+        }
+      ]
+    },
+    {
+      "id": "call_exG7Njuj52mXn3BvHudKdOI3",
+      "name": "consult_demogorgon",
+      "arguments": {
+        "complaint": "My lights keep flickering and I think there is a portal in my basement."
+      },
+      "results": [
+        {
+          "tool_call_id": "call_exG7Njuj52mXn3BvHudKdOI3",
+          "name": "consult_demogorgon",
+          "content": "[IMPROVISATION] Regarding My lights keep flickering and I think there is a portal in my basement.: The Demogorgon offers a roar-based apology and no tracking number.",
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "tool_results": [
+    {
+      "tool_call_id": "call_1UiKx8erJetMRDrDeZE3gBTz",
+      "name": "check_hawkins_records",
+      "content": "[FICTIONAL RECORD HK-001 | portal] Suspected portals must be reported to the Hawkins containment desk. Do not enter.",
+      "status": "success"
+    },
+    {
+      "tool_call_id": "call_exG7Njuj52mXn3BvHudKdOI3",
+      "name": "consult_demogorgon",
+      "content": "[IMPROVISATION] Regarding My lights keep flickering and I think there is a portal in my basement.: The Demogorgon offers a roar-based apology and no tracking number.",
+      "status": "success"
+    }
+  ],
+  "final_response": "**Fictional record evidence:** I found a record stating, \"[FICTIONAL RECORD HK-001 | portal] Suspected portals must be reported to the Hawkins containment desk. Do not enter.\" So, it seems like your basement might be a bit more than just a storage area!\n\n**Invented humorous suggestions:** As for your flickering lights, the Demogorgon has graciously offered a roar-based apology, but unfortunately, no tracking number for your portal situation. Maybe it’s just trying to get your attention? \n\n**Next steps:** I recommend reporting the suspected portal to the Hawkins containment desk immediately. They have the expertise to handle such situations (and probably some cool gear). In the meantime, you might want to avoid any late-night basement adventures—who knows what might be lurking down there!",
+  "verification": {
+    "automated_checks": {
+      "relevant_tool_called": false,
+      "all_tool_results_captured": true,
+      "all_tool_results_successful": true,
+      "references_returned_evidence": true,
+      "no_unreturned_record_ids": true,
+      "final_response_present": true
+    },
+    "automated_checks_passed": false,
+    "matched_record_sentences": [
+      "Suspected portals must be reported to the Hawkins containment desk. Do not enter."
+    ],
+    "unsupported_record_ids": [],
+    "answer_supported_by_tool_evidence": "pending_human_review",
+    "manual_review_required": true,
+    "manual_review_flags": [
+      "Review every factual claim, including claims without HK IDs, against actual results.",
+      "Check that invented advice is labeled and not presented as a verified remedy."
+    ],
+    "limitation": "Literal matches and topic keywords do not prove semantic grounding."
+  }
+}

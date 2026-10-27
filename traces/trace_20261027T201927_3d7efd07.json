@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-27T20:19:27.457526+00:00",
+  "status": "completed",
+  "query": "A monster stole my delivery. Can you help me get my parcel back?",
+  "model": "gpt-4o-mini",
+  "tool_calls": [
+    {
+      "id": "call_MLAvPqFCbD3iiSuiAs2nj41E",
+      "name": "consult_demogorgon",
+      "arguments": {
+        "complaint": "A monster stole my delivery."
+      },
+      "results": [
+        {
+          "tool_call_id": "call_MLAvPqFCbD3iiSuiAs2nj41E",
+          "name": "consult_demogorgon",
+          "content": "[IMPROVISATION] Regarding A monster stole my delivery.: The Demogorgon recommends a suggestion box made of waffles.",
+          "status": "success"
+        }
+      ]
+    },
+    {
+      "id": "call_4EnRdjl0L9etQsU6ScWEUCMS",
+      "name": "check_hawkins_records",
+      "arguments": {
+        "query": "monster stole my delivery"
+      },
+      "results": [
+        {
+          "tool_call_id": "call_4EnRdjl0L9etQsU6ScWEUCMS",
+          "name": "check_hawkins_records",
+          "content": "[FICTIONAL RECORD HK-002 | monsters] Monster-related delivery losses require a missing-parcel report. Do not pursue the creature.",
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "tool_results": [
+    {
+      "tool_call_id": "call_MLAvPqFCbD3iiSuiAs2nj41E",
+      "name": "consult_demogorgon",
+      "content": "[IMPROVISATION] Regarding A monster stole my delivery.: The Demogorgon recommends a suggestion box made of waffles.",
+      "status": "success"
+    },
+    {
+      "tool_call_id": "call_4EnRdjl0L9etQsU6ScWEUCMS",
+      "name": "check_hawkins_records",
+      "content": "[FICTIONAL RECORD HK-002 | monsters] Monster-related delivery losses require a missing-parcel report. Do not pursue the creature.",
+      "status": "success"
+    }
+  ],
+  "final_response": "**Fictional record evidence:** According to our records, \"Monster-related delivery losses require a missing-parcel report. Do not pursue the creature.\" (HK-002)\n\nNow, while I can't promise you a magical solution, I can suggest a few steps to help you get your parcel back:\n\n1. **File a Missing Parcel Report:** Contact the delivery service and let them know about the situation. They might have a special protocol for monster-related incidents (who knew?).\n\n2. **Consult the Demogorgon:** As a humorous suggestion, the Demogorgon recommends creating a suggestion box made of waffles. Maybe the monster has a sweet tooth and will return your parcel in exchange for some tasty treats!\n\n3. **Avoid Confrontation:** It's best not to chase after the creature. Monsters can be unpredictable, and we wouldn't want you to end up in the Upside Down!\n\nIf you need further assistance, feel free to reach out!",
+  "verification": {
+    "automated_checks": {
+      "relevant_tool_called": true,
+      "all_tool_results_captured": true,
+      "all_tool_results_successful": true,
+      "references_returned_evidence": true,
+      "no_unreturned_record_ids": true,
+      "final_response_present": true
+    },
+    "automated_checks_passed": true,
+    "matched_record_sentences": [
+      "Monster-related delivery losses require a missing-parcel report. Do not pursue the creature."
+    ],
+    "unsupported_record_ids": [],
+    "answer_supported_by_tool_evidence": "pending_human_review",
+    "manual_review_required": true,
+    "manual_review_flags": [
+      "Review every factual claim, including claims without HK IDs, against actual results.",
+      "Check that invented advice is labeled and not presented as a verified remedy."
+    ],
+    "limitation": "Literal matches and topic keywords do not prove semantic grounding."
+  }
+}

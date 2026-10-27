@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-27T20:19:33.307696+00:00",
+  "status": "completed",
+  "query": "Psychic interference keeps moving my household objects. What should I do?",
+  "model": "gpt-4o-mini",
+  "tool_calls": [
+    {
+      "id": "call_gH6J0ssPka4HjGaSYtMPT7bO",
+      "name": "check_hawkins_records",
+      "arguments": {
+        "query": "psychic interference moving household objects"
+      },
+      "results": [
+        {
+          "tool_call_id": "call_gH6J0ssPka4HjGaSYtMPT7bO",
+          "name": "check_hawkins_records",
+          "content": "[FICTIONAL RECORD HK-003 | psychics] Psychic interference reports should list affected objects and the time of each incident.",
+          "status": "success"
+        }
+      ]
+    },
+    {
+      "id": "call_1Pgjd7oERqbTbJ1Urppvmo0X",
+      "name": "consult_demogorgon",
+      "arguments": {
+        "complaint": "Psychic interference keeps moving my household objects."
+      },
+      "results": [
+        {
+          "tool_call_id": "call_1Pgjd7oERqbTbJ1Urppvmo0X",
+          "name": "consult_demogorgon",
+          "content": "[IMPROVISATION] Regarding Psychic interference keeps moving my household objects.: The Demogorgon recommends a suggestion box made of waffles.",
+          "status": "success"
+        }
+      ]
+    },
+    {
+      "id": "call_POhWLTD8hDP1Ks4YaVOpcDHR",
+      "name": "gather_party_wisdom",
+      "arguments": {
+        "question": "What should I do about psychic interference?"
+      },
+      "results": [
+        {
+          "tool_call_id": "call_POhWLTD8hDP1Ks4YaVOpcDHR",
+          "name": "gather_party_wisdom",
+          "content": "[IMPROVISATION / PARTY WISDOM] Will: Write down which objects moved and when; feelings are not measurements.",
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "tool_results": [
+    {
+      "tool_call_id": "call_gH6J0ssPka4HjGaSYtMPT7bO",
+      "name": "check_hawkins_records",
+      "content": "[FICTIONAL RECORD HK-003 | psychics] Psychic interference reports should list affected objects and the time of each incident.",
+      "status": "success"
+    },
+    {
+      "tool_call_id": "call_1Pgjd7oERqbTbJ1Urppvmo0X",
+      "name": "consult_demogorgon",
+      "content": "[IMPROVISATION] Regarding Psychic interference keeps moving my household objects.: The Demogorgon recommends a suggestion box made of waffles.",
+      "status": "success"
+    },
+    {
+      "tool_call_id": "call_POhWLTD8hDP1Ks4YaVOpcDHR",
+      "name": "gather_party_wisdom",
+      "content": "[IMPROVISATION / PARTY WISDOM] Will: Write down which objects moved and when; feelings are not measurements.",
+      "status": "success"
+    }
+  ],
+  "final_response": "**Fictional record evidence:** According to Hawkins records, \"[psychics] Psychic interference reports should list affected objects and the time of each incident.\" (HK-003). So, it seems like keeping a log might be the first step!\n\n**Invented humorous suggestions:** The Demogorgon has a rather unique take on your situation: it recommends creating a suggestion box made of waffles. Because who wouldn't want to snack while dealing with psychic chaos?\n\n**Invented party wisdom:** Will suggests, \"Write down which objects moved and when; feelings are not measurements.\" This sounds like a solid plan to track the mischief!\n\n**Next steps:** Start by documenting the objects that are moving and the times they do so. This will help you identify any patterns or specific triggers. If things get too wild, consider reaching out to a local psychic or a group of friends for support (preferably those who aren't afraid of the Upside Down).",
+  "verification": {
+    "automated_checks": {
+      "relevant_tool_called": true,
+      "all_tool_results_captured": true,
+      "all_tool_results_successful": true,
+      "references_returned_evidence": true,
+      "no_unreturned_record_ids": true,
+      "final_response_present": true
+    },
+    "automated_checks_passed": true,
+    "matched_record_sentences": [
+      "Psychic interference reports should list affected objects and the time of each incident."
+    ],
+    "unsupported_record_ids": [],
+    "answer_supported_by_tool_evidence": "pending_human_review",
+    "manual_review_required": true,
+    "manual_review_flags": [
+      "Review every factual claim, including claims without HK IDs, against actual results.",
+      "Check that invented advice is labeled and not presented as a verified remedy."
+    ],
+    "limitation": "Literal matches and topic keywords do not prove semantic grounding."
+  }
+}
