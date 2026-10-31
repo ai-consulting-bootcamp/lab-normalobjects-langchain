@@ -1,0 +1,276 @@
+{
+  "mode": "live_agent_evaluation",
+  "model": "gpt-4o-mini",
+  "recursion_limit": 10,
+  "agent_runs": [
+    {
+      "complaint": "My Christmas lights keep flickering and I hear noises from the wall. What is going on?",
+      "total_tool_calls": 2,
+      "total_ai_tool_turns": 1,
+      "tool_sequence": [
+        "check_hawkins_records",
+        "consult_demogorgon"
+      ],
+      "turns_summary": [
+        [
+          "check_hawkins_records",
+          "consult_demogorgon"
+        ]
+      ],
+      "chaining_pattern": "(check_hawkins_records + consult_demogorgon [same AI turn])",
+      "tool_counts": {
+        "check_hawkins_records": 1,
+        "consult_demogorgon": 1
+      },
+      "trace_steps": [
+        {
+          "call_number": 1,
+          "ai_turn_index": 1,
+          "index_within_turn": 0,
+          "is_parallel_call_in_turn": true,
+          "tool_call_id": "call_PJFnAt51WUyiq4HS1ww3DyTj",
+          "tool_name": "check_hawkins_records",
+          "args": {
+            "query": "electricity"
+          },
+          "output": "Hawkins Record #HNL-04 (Electricity): Magnetic field anomalies and flickering lights (especially holiday string lights and wall radios) indicate proximity to an active Upside Down membrane or entity."
+        },
+        {
+          "call_number": 2,
+          "ai_turn_index": 1,
+          "index_within_turn": 1,
+          "is_parallel_call_in_turn": true,
+          "tool_call_id": "call_lJgpZghZ33bdjhjoLJCZtyJl",
+          "tool_name": "consult_demogorgon",
+          "args": {
+            "complaint": "flickering Christmas lights and noises from the wall"
+          },
+          "output": "*Screeching petal-jaw noises* The Demogorgon tilts its head at 'flickering Christmas lights and noises from the wall', blames Hawkins Lab's fluorescent lighting, and demands three nougat bars as tribute."
+        }
+      ],
+      "final_answer": "It looks like your flickering Christmas lights and the strange noises from the wall might be tied to some rather unusual happenings! According to Hawkins Record #HNL-04, flickering lights—especially holiday decorations—can indicate that you're near an active membrane or entity from the Upside Down. So, if you’re seeing lights dance unexpectedly, you might want to check for any rips in reality nearby!\n\nOn the chaotic side of things, the Demogorgon has chimed in with its own take. It blames Hawkins Lab's fluorescent lighting for the disturbances and amusingly demands three nougat bars as tribute. So, if you're feeling festive, maybe throw in some candy as a peace offering to whatever might be lurking in the walls!\n\nIn summary, keep an eye out for any strange portals, and consider a little festive treat to keep the peace!"
+    },
+    {
+      "complaint": "There is a weird portal in my basement. What's the plan?",
+      "total_tool_calls": 3,
+      "total_ai_tool_turns": 2,
+      "tool_sequence": [
+        "check_hawkins_records",
+        "gather_party_wisdom",
+        "cast_interdimensional_spell"
+      ],
+      "turns_summary": [
+        [
+          "check_hawkins_records",
+          "gather_party_wisdom"
+        ],
+        [
+          "cast_interdimensional_spell"
+        ]
+      ],
+      "chaining_pattern": "(check_hawkins_records + gather_party_wisdom [same AI turn]) -> cast_interdimensional_spell",
+      "tool_counts": {
+        "check_hawkins_records": 1,
+        "gather_party_wisdom": 1,
+        "cast_interdimensional_spell": 1
+      },
+      "trace_steps": [
+        {
+          "call_number": 1,
+          "ai_turn_index": 1,
+          "index_within_turn": 0,
+          "is_parallel_call_in_turn": true,
+          "tool_call_id": "call_EhvXmyDwgFGg670SzyTQjbej",
+          "tool_name": "check_hawkins_records",
+          "args": {
+            "query": "portal"
+          },
+          "output": "Hawkins Record #HNL-01 (Portal): Interdimensional gates form where psychic trauma intersects with high-voltage electromagnetic fields. Standard containment requires sustained heat and sonic disruption."
+        },
+        {
+          "call_number": 2,
+          "ai_turn_index": 1,
+          "index_within_turn": 1,
+          "is_parallel_call_in_turn": true,
+          "tool_call_id": "call_bIpRzLG77yDIXKBoHKMHcJ9T",
+          "tool_name": "gather_party_wisdom",
+          "args": {
+            "question": "What should we do about a portal in the basement?"
+          },
+          "output": "Mike says: 'Just like in our D&D campaign, a portal is a Vale of Shadows gate! We need a coordinated party plan—nobody goes into the basement alone, and keep your Supercomm on channel 3!'"
+        },
+        {
+          "call_number": 3,
+          "ai_turn_index": 2,
+          "index_within_turn": 0,
+          "is_parallel_call_in_turn": false,
+          "tool_call_id": "call_njfMjsZLZ1kWB8USWZHUnkqG",
+          "tool_name": "cast_interdimensional_spell",
+          "args": {
+            "problem": "weird portal in basement",
+            "creativity_level": "medium"
+          },
+          "output": "[Arcane Christmas-Light Faraday Cage] Wrap copper fairy lights counter-clockwise around the perimeter of 'weird portal in basement' and pulse Morse code S-O-S to neutralize spore interference.\n[Ritual of the Salt-Bath Resonance] Submerge a walkie-talkie tuned to Channel 7 near a kiddie pool of Epsom salt to invert the polarity of 'weird portal in basement'."
+        }
+      ],
+      "final_answer": "Dealing with a weird portal in your basement? Sounds like a classic Hawkins situation! Here’s a plan based on the findings:\n\n### Findings from Hawkins Records\nAccording to **Hawkins Record #HNL-01**, portals often form due to the intersection of psychic trauma and high-voltage electromagnetic fields. To contain these anomalies, you typically need sustained heat and sonic disruption.\n\n### Party Wisdom\n**Mike** suggests treating this like a D&D campaign: “No one goes in alone, and keep your Supercomm on channel 3!” This is a solid plan! Teamwork is essential. \n\n### Creative Spell Solutions\nHere are two spells you can cast to help manage that pesky portal:\n\n1. **Arcane Christmas-Light Faraday Cage**: Wrap copper fairy lights counter-clockwise around the perimeter of the portal. Then, pulse Morse code S-O-S through the lights to neutralize any spore interference. It’s festive and functional!\n\n2. **Ritual of the Salt-Bath Resonance**: Submerge a walkie-talkie tuned to Channel 7 in a kiddie pool filled with Epsom salt. This ritual will help invert the polarity of the portal, making it safer to handle.\n\n### Final Plan\n- Gather your friends (no solo adventures!).\n- Set up the **Arcane Christmas-Light Faraday Cage** around the portal.\n- Prepare the **Ritual of the Salt-Bath Resonance** with a kiddie pool and a walkie-talkie.\n\nFollow these steps, and you should be well on your way to taming that mysterious portal! Good luck, and remember to stay safe!"
+    },
+    {
+      "complaint": "A Demodog ate my homework. I need a creative solution, creativity level high!",
+      "total_tool_calls": 1,
+      "total_ai_tool_turns": 1,
+      "tool_sequence": [
+        "cast_interdimensional_spell"
+      ],
+      "turns_summary": [
+        [
+          "cast_interdimensional_spell"
+        ]
+      ],
+      "chaining_pattern": "cast_interdimensional_spell",
+      "tool_counts": {
+        "cast_interdimensional_spell": 1
+      },
+      "trace_steps": [
+        {
+          "call_number": 1,
+          "ai_turn_index": 1,
+          "index_within_turn": 0,
+          "is_parallel_call_in_turn": false,
+          "tool_call_id": "call_Cl4ShWyie2HzXEfpjr2sM3xQ",
+          "tool_name": "cast_interdimensional_spell",
+          "args": {
+            "problem": "A Demodog ate my homework.",
+            "creativity_level": "high"
+          },
+          "output": "[Arcane Christmas-Light Faraday Cage] Wrap copper fairy lights counter-clockwise around the perimeter of 'A Demodog ate my homework.' and pulse Morse code S-O-S to neutralize spore interference.\n[Spell of Eldritch Eggo Ward] Arrange toasted Eggo waffles in a pentagram around the site of 'A Demodog ate my homework.' while blasting 85-decibel synthwave to seal the dimensional seam.\n[Ritual of the Salt-Bath Resonance] Submerge a walkie-talkie tuned to Channel 7 near a kiddie pool of Epsom salt to invert the polarity of 'A Demodog ate my homework.'."
+        }
+      ],
+      "final_answer": "Oh no! A Demodog devoured your homework? That's a classic Upside Down dilemma! Here are three high-creativity spells to tackle this furry situation:\n\n1. **Arcane Christmas-Light Faraday Cage**: Wrap some copper fairy lights counter-clockwise around your homework (or what's left of it). As you do this, pulse out an SOS in Morse code! This will neutralize any spore interference lingering from the Demodog's munching.\n\n2. **Spell of Eldritch Eggo Ward**: Gather some toasted Eggo waffles and arrange them in a pentagram shape around the remnants of your assignment. While you’re at it, pump up some 85-decibel synthwave music to seal the dimensional seam and keep those pesky Demodogs at bay!\n\n3. **Ritual of the Salt-Bath Resonance**: Find a kiddie pool and fill it with Epsom salt. Submerge a walkie-talkie tuned to Channel 7 in the pool. This ritual will invert the polarity of the situation, potentially restoring your homework or at least giving you a good excuse!\n\nWith these spells, you should be able to tackle that Demodog dilemma and reclaim your homework (or at least have a good laugh about it)! Good luck!"
+    },
+    {
+      "complaint": "My neighbor's cat is acting weird. Is it from the Upside Down?",
+      "total_tool_calls": 2,
+      "total_ai_tool_turns": 1,
+      "tool_sequence": [
+        "consult_demogorgon",
+        "check_hawkins_records"
+      ],
+      "turns_summary": [
+        [
+          "consult_demogorgon",
+          "check_hawkins_records"
+        ]
+      ],
+      "chaining_pattern": "(consult_demogorgon + check_hawkins_records [same AI turn])",
+      "tool_counts": {
+        "consult_demogorgon": 1,
+        "check_hawkins_records": 1
+      },
+      "trace_steps": [
+        {
+          "call_number": 1,
+          "ai_turn_index": 1,
+          "index_within_turn": 0,
+          "is_parallel_call_in_turn": true,
+          "tool_call_id": "call_1GvHeJDWU2ICE9tfVvDWaag3",
+          "tool_name": "consult_demogorgon",
+          "args": {
+            "complaint": "My neighbor's cat is acting weird. Is it from the Upside Down?"
+          },
+          "output": "*Guttural Upside Down growl* Regarding 'My neighbor's cat is acting weird. Is it from the Upside Down?': the Demogorgon insists it was merely looking for its lost car keys in your dimension and suggests you stop leaving interdimensional doors unlocked."
+        },
+        {
+          "call_number": 2,
+          "ai_turn_index": 1,
+          "index_within_turn": 1,
+          "is_parallel_call_in_turn": true,
+          "tool_call_id": "call_w2Z35Yqpqx4cZfJYW2LdVk1h",
+          "tool_name": "check_hawkins_records",
+          "args": {
+            "query": "cats from the Upside Down"
+          },
+          "output": "Hawkins Record Search: Record not found for query 'cats from the Upside Down'. No classified entry matches portal, monsters, psychics, or electricity."
+        }
+      ],
+      "final_answer": "The Demogorgon has chimed in with its chaotic wisdom, responding to your query about the bizarre behavior of your neighbor's cat. It suggests that the cat was simply on the hunt for its lost car keys in your dimension – a rather relatable plight, don't you think? It also warns you to stop leaving interdimensional doors unlocked, as this could lead to more than just a curious feline!\n\nOn the official side, I checked the Hawkins Lab records regarding \"cats from the Upside Down\" but found no classified entries related to our feline friends. It seems that while strange happenings abound, we can safely conclude that your neighbor's cat has not been touched by the chaos of the Upside Down – at least not in any documented way. \n\nPerhaps it's just acting weird for more mundane reasons, like a new toy or an existential crisis?"
+    }
+  ],
+  "tracker_summary": {
+    "total_runs": 4,
+    "aggregate_tool_counts": {
+      "consult_demogorgon": 2,
+      "check_hawkins_records": 3,
+      "cast_interdimensional_spell": 2,
+      "gather_party_wisdom": 1
+    },
+    "chaining_patterns_by_run": [
+      {
+        "complaint": "My Christmas lights keep flickering and I hear noises from the wall. What is going on?",
+        "chaining_pattern": "(check_hawkins_records + consult_demogorgon [same AI turn])",
+        "total_tool_calls": 2,
+        "total_ai_tool_turns": 1
+      },
+      {
+        "complaint": "There is a weird portal in my basement. What's the plan?",
+        "chaining_pattern": "(check_hawkins_records + gather_party_wisdom [same AI turn]) -> cast_interdimensional_spell",
+        "total_tool_calls": 3,
+        "total_ai_tool_turns": 2
+      },
+      {
+        "complaint": "A Demodog ate my homework. I need a creative solution, creativity level high!",
+        "chaining_pattern": "cast_interdimensional_spell",
+        "total_tool_calls": 1,
+        "total_ai_tool_turns": 1
+      },
+      {
+        "complaint": "My neighbor's cat is acting weird. Is it from the Upside Down?",
+        "chaining_pattern": "(consult_demogorgon + check_hawkins_records [same AI turn])",
+        "total_tool_calls": 2,
+        "total_ai_tool_turns": 1
+      }
+    ]
+  },
+  "structured_comparison": {
+    "complaint": "My Christmas lights keep flickering and I hear noises from the wall. What is going on?",
+    "workflow_type": "fixed_order_structured_without_llm",
+    "tool_sequence": [
+      "check_hawkins_records",
+      "gather_party_wisdom",
+      "cast_interdimensional_spell"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "tool_name": "check_hawkins_records",
+        "args": {
+          "query": "My Christmas lights keep flickering and I hear noises from the wall. What is going on?"
+        },
+        "output": "Hawkins Record Search: Record not found for query 'My Christmas lights keep flickering and I hear noises from the wall. What is going on?'. No classified entry matches portal, monsters, psychics, or electricity."
+      },
+      {
+        "step": 2,
+        "tool_name": "gather_party_wisdom",
+        "args": {
+          "question": "My Christmas lights keep flickering and I hear noises from the wall. What is going on?"
+        },
+        "output": "Will says: 'When the lights flicker and you hear noises in the wall, the Mind Flayer or something from the Upside Down is right behind the membrane—use the alphabet wall to see if someone is talking!'"
+      },
+      {
+        "step": 3,
+        "tool_name": "cast_interdimensional_spell",
+        "args": {
+          "problem": "My Christmas lights keep flickering and I hear noises from the wall. What is going on?",
+          "creativity_level": "low"
+        },
+        "output": "[Ritual of the Salt-Bath Resonance] Submerge a walkie-talkie tuned to Channel 7 near a kiddie pool of Epsom salt to invert the polarity of 'My Christmas lights keep flickering and I hear noises from the wall. What is going on?'."
+      }
+    ],
+    "final_output": "=== Structured Complaint Resolution (Fixed-Order Workflow) ===\nComplaint: My Christmas lights keep flickering and I hear noises from the wall. What is going on?\n\n[Step 1 - Hawkins Lab Record]:\nHawkins Record Search: Record not found for query 'My Christmas lights keep flickering and I hear noises from the wall. What is going on?'. No classified entry matches portal, monsters, psychics, or electricity.\n\n[Step 2 - Party Wisdom]:\nWill says: 'When the lights flicker and you hear noises in the wall, the Mind Flayer or something from the Upside Down is right behind the membrane—use the alphabet wall to see if someone is talking!'\n\n[Step 3 - Interdimensional Spell (creativity_level='low')]:\n[Ritual of the Salt-Bath Resonance] Submerge a walkie-talkie tuned to Channel 7 near a kiddie pool of Epsom salt to invert the polarity of 'My Christmas lights keep flickering and I hear noises from the wall. What is going on?'."
+  },
+  "fallback_demonstration": {
+    "query": "My neighbor's cat is acting weird. Is it from the Upside Down?",
+    "check_hawkins_records_direct_output": "Hawkins Record Search: Record not found for query 'My neighbor's cat is acting weird. Is it from the Upside Down?'. No classified entry matches portal, monsters, psychics, or electricity.",
+    "gather_party_wisdom_direct_output": "The Party forms an emergency huddle in Wheeler's basement: Mike, Dustin, Lucas, and Will compare D&D manuals and agree this anomaly needs close observation, walkie-talkie check-ins every 10 minutes, and backup from Eleven."
+  }
+}
