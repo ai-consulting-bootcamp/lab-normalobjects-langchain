@@ -32,7 +32,7 @@ EXPLAIN: identify one grounding risk or failure mode
 
 ## Prompt Discipline
 
-Use AI for review, debugging, or critique. Do not ask it to produce the final artifact or final answer.
+
 
 ```text
 Role: Retrieval or agent reviewer
